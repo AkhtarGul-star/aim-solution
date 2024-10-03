@@ -1,10 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { NgOptimizedImage } from '@angular/common';
+import { ProductListComponent } from "./features/product-list/product-list.component";
+import { RoomListComponent } from "./features/room-list/room-list.component";
+import { HeaderComponent } from "./features/header/header.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, HeaderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
